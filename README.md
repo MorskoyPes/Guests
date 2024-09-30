@@ -21,6 +21,10 @@
     docker-compose up --build -d
     docker-compose exec php bin/console doctrine:migrations:migrate
 
+## Тесты запускаются внутри контейнера:
+   ```bash
+   php bin/phpunit
+```
 ## Документация API Swagger:
 
 http://localhost:8080/api/doc
@@ -156,3 +160,4 @@ DELETE /guest/1
 X-Debug-Time: указывает, сколько миллисекунд занял запрос.
 
 X-Debug-Memory: показывает количество памяти (в Кб), использованной для выполнения запроса.
+
